@@ -1,0 +1,8 @@
+let score = 0;
+const scoreEl = document.getElementById("score");
+
+// очки ростуть постійно
+setInterval(() => {
+  score++;
+  scoreEl.textContent = score;
+}, 200);
