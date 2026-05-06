@@ -1,0 +1,49 @@
+body {
+  background: #f0f0f0;
+}
+
+.game {
+  width: 800px;
+  height: 200px;
+  border: 2px solid black;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+  background: white;
+}
+
+#raccoon {
+  width: 80px;
+  height: 80px;
+  background-image: url('raccoon-run.png'); /* перше фото */
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+}
+
+#raccoon.jump {
+  animation: jump 0.5s linear;
+  background-image: url('raccoon-jump.png'); /* друге фото */
+}
+
+@keyframes jump {
+  0% { bottom: 0; }
+  50% { bottom: 100px; }
+  100% { bottom: 0; }
+}
+
+#cactus {
+  width: 30px;
+  height: 50px;
+  background: green;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: move 2s infinite linear;
+}
+
+@keyframes move {
+  0% { right: -30px; }
+  100% { right: 800px; }
+}
