@@ -24,7 +24,7 @@ body {
 
 #raccoon.jump {
   animation: jump 0.5s linear;
-  background-image: url('raccoon-jump.png'); /* друге фото */
+  background-image: url('https://taichka.github.io/TaisiaSuper/enot.png'); /* друге фото */
 }
 
 @keyframes jump {
